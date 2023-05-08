@@ -1,3 +1,3 @@
 ## CS-50
 ### Description 
-Begning of my programing career
+Starting a new chapter of programming with the cs50
