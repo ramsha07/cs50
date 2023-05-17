@@ -55,7 +55,7 @@ double 8 bytes
 char 1 byte
 string ? bytes
 
-1. * **Basic**
+ * **Basic**
 ```c
  // Scores
     int score1 = 72;
@@ -65,7 +65,7 @@ string ? bytes
     // Print average
     printf("Average: %f\n", (score1 + score2 + score3) / 3.0);
 ```
-2. * **int scores[3] is a way of telling the compiler to provide you three back-to-back places in memory of size int to store three scores**.
+ * **int scores[3] is a way of telling the compiler to provide you three back-to-back places in memory of size int to store three scores**.
  Considering our program, you can revise your code as follows:
  ```c
  // Scores
@@ -77,7 +77,7 @@ string ? bytes
     // Print average
     printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
 ```
-3. * **Using loop, there is still an opportunity for improving our code. How we index into scores by using scores[i] where i is supplied by the for loop. Revise your code as follows:**
+ * **Using loop, there is still an opportunity for improving our code. How we index into scores by using scores[i] where i is supplied by the for loop. Revise your code as follows:**
 ```c
 // Get scores
     int scores[3];
@@ -90,7 +90,7 @@ string ? bytes
     printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
     ```
 
-4. * **We can simplify or abstract away the calculation of the average. Notice that a new function called average is declared. Further, notice that a const or constant value of N is declared. Most importantly, notice how the average function takes int array[], which means that the compiler passes an array to this function. Modify your code as follows**:   
+ * **We can simplify or abstract away the calculation of the average. Notice that a new function called average is declared. Further, notice that a const or constant value of N is declared. Most importantly, notice how the average function takes int array[], which means that the compiler passes an array to this function. Modify your code as follows**:   
 ```c
 // Constant
 const int N = 3;
