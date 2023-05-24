@@ -32,7 +32,7 @@ int main(void)
         printf("Player 2 wins!");
     }
 }
-
+//defining function
 int compute_score(string word)
 {
     int sum = 0;
