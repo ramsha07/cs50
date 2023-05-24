@@ -47,6 +47,33 @@ This tool will not show you where your bug is, it will help you slow down and se
  When you are having challenges with your code, consider speaking out loud to a rubber duck about the code problem. 
 
 4. **ARRAYS**:
+An array consist of 3 things the name of the array, the size of the array, and the type of value we want to store in our array
+For example;
+```c
+int hour[5];
+```
+Here, `hour` is the name of the array
+        `int` is the type of value we are storing in our array
+        `[5]` is the size of our array 
+
+Now that we store upto 5 integer value in our array called hours
+hour[0], hour[1], hour[2], hour[3],hour[4]
+We cannot count hour[5], beacause our array can store only 5 values not 6 counting from zero
+
+Now lets store the integer value in our array
+hour [0] gets the value 7
+
+hour[0]= 7;
+hour[1]= 8;
+hour[2]= 9;
+hour[3]= 4;
+hour[4]= 6;
+can also be written as;
+
+int hour[] = [7,8,9,4,6];
+char character[] ={'E','m','m','a','\0'};
+string name[ ="Ramsha"];
+
 bool 1 byte
 int 4 bytes
 long 8 bytes
@@ -90,7 +117,8 @@ string ? bytes
     printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
     ```
 
- * **We can simplify or abstract away the calculation of the average. Notice that a new function called average is declared. Further, notice that a const or constant value of N is declared. Most importantly, notice how the average function takes int array[], which means that the compiler passes an array to this function. Modify your code as follows**:   
+* **We can simplify or abstract away the calculation of the average. Notice that a new function called average is declared. Further, notice that a const or constant value of N is declared. Most importantly, notice how the average function takes int array[], which means that the compiler passes an array to this function. Modify your code as follows**:   
+
 ```c
 // Constant
 const int N = 3;
@@ -122,3 +150,22 @@ float average(int length, int array[])
     return sum / (float) length;
 }
 ```
+5. **Functions**:
+As the code proceeds you cannot store everything inside of your main function. Fuction is a blackbox that takes `0+` inputs and `returns` only `1` output.
+Funtions allow us to:
+* **Organize our code**
+* **Simplify our design,implent and debug**
+* **Can be recycled again once written**
+
+* **Function Declaration format:**
+return type(int)
+name(should be specic to what will this function do)
+name and type of inputs(int and name, each input seperated by commas)
+ending with the semicolon at the end
+float multiply_two_float(float a,float b);
+
+* **Function Definition:**
+same as declaration without the semicolon and with the curly braces
+inside the curly braces the process is held for ehich the function is defined
+int sum= a+b //delare the variable type,name which will do the operation for us
+return sum; this function return us some value
